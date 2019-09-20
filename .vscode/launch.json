@@ -1,0 +1,48 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Product GraphQL Service",
+			"program": "${workspaceFolder}/product-service/src/index.ts",
+			"outFiles": [
+				"${workspaceFolder}/product-service/dist/**/*.js"
+			],
+			"preLaunchTask": "tsc: build - product-service/tsconfig.json",
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Inventory GraphQL Service",
+			"program": "${workspaceFolder}/inventory-service/src/index.ts",
+			"outFiles": [
+				"${workspaceFolder}/inventory-service/dist/**/*.js"
+			],
+			"preLaunchTask": "tsc: build - inventory-service/tsconfig.json",
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Accounts GraphQL Service",
+			"program": "${workspaceFolder}/accounts-service/src/index.ts",
+			"outFiles": [
+				"${workspaceFolder}/accounts-service/dist/**/*.js"
+			],
+			"preLaunchTask": "tsc: build - accounts-service/tsconfig.json",
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Gateway GraphQL Service",
+			"program": "${workspaceFolder}/gateway-service/src/gateway.ts",
+			"outFiles": [
+				"${workspaceFolder}/gateway-service/dist/**/*.js"
+			],
+			"preLaunchTask": "tsc: build - gateway-service/tsconfig.json",
+		}
+	]
+}
